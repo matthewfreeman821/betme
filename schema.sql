@@ -17,6 +17,7 @@ create table Todo (
     foreign key (PId) references Player(PlayerId)
     on delete cascade,
     Todo varchar(500),
+    Timeframe varchar(75)
 );
 
 create table Wins (
@@ -24,5 +25,5 @@ create table Wins (
     PId int,
     foreign key (PId) references Player(PlayerId)
     on delete cascade,
-    Win varchar(500),
+    Win varchar(500)
 );
