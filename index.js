@@ -14,12 +14,40 @@ app.use(static('public/images'));
 
 console.log('This should work');
 
+// Homepage
 app.get('/', (req, res) => {
     res.render('homepage')
 });
 
+// Player 1 tab
+app.get('/player1', (req, res) => {
+        res.render('player1')
+});
+
+//Player 2 tab
+app.get('/player2', (req, res) => {
+    res.render('player2')
+});
+
+//What the bet is tab
+app.get('/bet', (req, res) => {
+    res.render('bet')
+});
+
+// Winnings tab
+app.get('/winnings', (req, res) => {
+    res.render('winnings')
+});
+
+// Info tab
+app.get('/info', (req, res) => {
+    res.render('info')
+});
 
 
+// Sign up
+
+// Sign in
 
 
 app.listen(3000, () => {
